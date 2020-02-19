@@ -30,7 +30,6 @@ export default class News extends React.Component{
           this.setState({feed:newArray})
         })
     }
-    console.log(newArray)
   }
 
   componentDidMount(){

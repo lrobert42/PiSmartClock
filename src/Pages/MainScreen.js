@@ -1,6 +1,8 @@
 import React from 'react'
 
 import News from "../Components/News.js"
+import SpotifyContainer from "../Components/Spotify.js"
+import Clock from "../Components/Clock.js"
 
 export default class MainScreen extends React.Component{
   constructor(props){
@@ -16,10 +18,10 @@ export default class MainScreen extends React.Component{
   render(){
     return(
       <>
-        <h1> Clock </h1>
+        <Clock/>
         <News URLs = {this.state.URLs}/>
         <h1> Todo/Calendar </h1>
-        <h1> Spotify </h1>
+        <SpotifyContainer />
         <h1> Lights </h1>
         <h1> Weather Forecast </h1>
       </>
